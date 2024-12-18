@@ -24,8 +24,8 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #2d314d;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
   min-height: 100vh;
 }
@@ -44,8 +44,8 @@ body {
 /* Newsletter Content - Left Column */
 .newsletter-content {
   padding: 60px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
   text-align: left;
 }
@@ -54,6 +54,7 @@ h1 {
   font-size: 52px;
   font-weight: 700;
   color: #2d314d;
+  margin-top: 25px;
   margin-bottom: 16px;
 }
 
@@ -61,12 +62,12 @@ p {
   font-size: 16px;
   font-weight: 400;
   color: #4b5563;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 ul {
   list-style: none;
-  margin-bottom: 32px;
+  margin-bottom: 0px;
   padding: 0;
 }
 
@@ -89,12 +90,12 @@ label {
   font-size: 12px;
   font-weight: bold;
   color: #2d314d;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 input {
   width: 100%;
-  padding: 16px;
+  padding: 10px;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   margin-bottom: 24px;
@@ -110,13 +111,14 @@ button {
   background-color: #2d314d;
   color: #ffffff;
   border: none;
-  padding: 18px 24px;
+  padding: 10px 24px;
   border-radius: 8px;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
   width: 100%;
+  margin-bottom: 25px;
 }
 
 button:hover {
@@ -126,7 +128,7 @@ button:hover {
 
 /* Newsletter Graphic - Right Column */
 .newsletter-graphic {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   padding: 30px 30px 30px 0;
@@ -142,8 +144,8 @@ button:hover {
 
 /* Success Message Page */
 .success-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-items: center;
   align-items: flex-start;
   background-color: #ffffff;
   border-radius: 35px;
