@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Success</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Success Card -->
+    <div class="success-card">
+      <img
+        src="./assets/images/icon-success.svg"
+        alt="Success Icon"
+        class="success-icon"
+      />
+      <div class="success-content">
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to
+          <span id="user-email"></span>. Please open it and click the button
+          inside to confirm your subscription.
+        </p>
+        <button onclick="window.close()">Dismiss message</button>
+      </div>
+    </div>
+
+    <script>
+      // Retrieve the email from the query string
+      const params = new URLSearchParams(window.location.search);
+      const email = params.get("email");
+
+      if (email) {
+        document.getElementById("user-email").textContent = email;
+      }
+    </script>
+  </body>
+</html>

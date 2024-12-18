@@ -120,7 +120,8 @@ button {
 }
 
 button:hover {
-  background-color: #1e253e;
+  background-color: #ff5e59;
+  box-shadow: 0px 12px 30px rgba(255, 70, 101, 0.541);
 }
 
 /* Newsletter Graphic - Right Column */
@@ -137,4 +138,65 @@ button:hover {
   height: auto;
   object-fit: contain;
   border-radius: 8px;
+}
+
+/* Success Message Page */
+.success-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 35px;
+  padding: 50px;
+  width: 400px;
+  height: auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  gap: 30px;
+  text-align: left;
+}
+
+.success-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.success-content h2,
+.success-content p,
+.success-content button {
+  margin: 0;
+}
+
+.success-content h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: #2d314d;
+  padding-bottom: 20px;
+}
+
+.success-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4b5563;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+.success-content button {
+  padding: 14px 20px;
+  background-color: #2d314d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.success-content button:hover {
+  background-color: #ff5e59;
+  box-shadow: 0px 12px 30px rgba(255, 70, 101, 0.541);
+}
+
+.success-content span {
+  font-weight: 700;
 }
